@@ -1,0 +1,45 @@
+@model Carronovos
+@{
+  ViewData["Title"] = "Cadastro de Carros Novos";
+}
+
+
+<div class="text-center">
+  <h1 class="display-4">Cadastrar Novo Carro</h1>
+</div>
+
+<form asp-controller="Carrosnovos" asp-action="CadastrarCarros" method="post">
+
+  <div class="form-group">
+    <label for="nome" class="form-label">nome</label>
+    <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do veículo">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">Marca</label>
+    <input type="text" asp-for="Marca" class="form-control" placeholder="Digite a marca do veículo">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">Modelo</label>
+    <input type="text" asp-for="Modelo" class="form-control" placeholder="Digite o modelo do veiculo">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">Cor</label>
+    <input type="text" asp-for="Cor" class="form-control" placeholder="Digite a cor do veículo">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">Ano Fabricação</label>
+    <input type="text" asp-for="AnoFabr" class="form-control" placeholder="Digite o ano de fabricação">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">Valor</label>
+    <input type="text" asp-for="Valor" class="form-control" placeholder="Digite o valor do veículo">
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+  <a class="btn btn-secondary btn-block" asp-controller="Carrosnovos" asp-action="Index" role="button">Voltar</a>
+</form>

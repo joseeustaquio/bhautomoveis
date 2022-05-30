@@ -1,0 +1,32 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Cadastrar novo Contato";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Novo contato</h1>
+</div>
+
+<form asp-controller="Home" asp-action="Contato" method="post">
+  
+  <div class="form-group">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o seu nome ">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">E-mail</label>
+    <input type="text" asp-for="Email" class="form-control" placeholder="Digite aqui o seu email">
+  </div>
+
+  <div class="form-group">
+    <label for="nome" class="form-label">Senha</label>
+    <input type="text" asp-for="Senha" class="form-control" placeholder="Digite sua senha ">
+  </div> 
+  
+  <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+  <a class="btn btn-secondary btn-block" asp-controller="Home" asp-action="Contato" role="button">Voltar</a>
+</form>
+
+

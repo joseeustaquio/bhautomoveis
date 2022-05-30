@@ -1,0 +1,31 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Cadastro de Usuarios";
+}
+  <h2>Cadastro de Novo Usuário</h2>
+
+  <p>@ViewData["Mensagem"]</p>
+
+<div class="text-center">
+    <h1 class="display-4">Cadastrar Novo Usuário</h1>
+</div>
+
+<form id="frmCadastro" asp-controller="Usuarios" asp-action="CadastraUsuario" method="post">
+  <div class="form-group">
+    <label for="nome">nome</label>
+    <input type="text" class="form-control" placeholder="Digite o seu nome ">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" placeholder="Digite aqui o seu email">
+  </div>
+
+  <div class="form-group">
+    <label for="senha">Senha</label>
+    <input type="password" class="form-control" placeholder="Digite sua senha ">
+  </div> 
+  
+  <button type="submit" class="btn btn-primary btn-block">Adicionar</button>
+  <a class="btn btn-secondary btn-block" asp-controller="Usuarios" asp-action="Index" role="button">Voltar</a>
+</form>

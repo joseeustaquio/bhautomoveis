@@ -1,0 +1,43 @@
+@model Carronovos
+@{
+    ViewData["Title"] = "Alteração de Carros Novos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Alterar Novo Carro</h1>
+</div>
+
+<form asp-controller="Carrosnovos" asp-action="EditarCarros" method="post">
+  <div class="form-group">
+    <label for="nome">nome</label>
+    <input type="text"asp-for="Nome"class="form-control" placeholder="Digite o nome do veículo">
+  </div>
+
+  <div class="form-group">
+    <label for="marca">Marca</label>
+    <input type="text" asp-for="Marca" class="form-control" placeholder="Digite a marca do veículo">
+  </div>
+
+  <div class="form-group">
+    <label for="modelo">Modelo</label>
+    <input type="text" asp-for="Modelo" class="form-control" placeholder="Digite o modelo do veiculo">
+  </div>
+
+  <div class="form-group">
+    <label for="cor">Cor</label>
+    <input type="text" asp-for="Cor" class="form-control" placeholder="Digite a cor do veículo">
+  </div>
+
+  <div class="form-group">
+    <label for="anoFabr">Ano Fabricação</label>
+    <input type="text" asp-for="AnoFabr" class="form-control" placeholder="Digite o ano de fabricação">
+  </div>
+
+  <div class="form-group">
+    <label for="valor">Valor</label>
+    <input type="text" asp-for="Valor" class="form-control" placeholder="Digite o valor do veículo">
+  </div>
+  
+  <button type="submit" class="btn btn-primary btn-block">Alterar</button>
+  <a class="btn btn-secondary btn-block" asp-controller="Carrosnovos" asp-action="Index" role="button">Voltar</a>
+</form>

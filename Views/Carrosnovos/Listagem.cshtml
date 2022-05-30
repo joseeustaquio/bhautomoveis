@@ -1,0 +1,78 @@
+@{
+    ViewData["Title"] = "Listagem de Carros Novos";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Carrosnovos" asp-action="CadastrarCarros">Adicionar Novo Carro</a>
+    </div>
+    <br>
+    <h1 class="display-4">Listagem de Carros Novos</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Cor</th>
+                <th scope="col">Ano Fabricação</th>
+                <th scope="col">Valor</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Chevett</td>
+                <td>Chevrolet</td>
+                <td>Luxo</td>
+                <td>HVinho</td>
+                <td>1975</td>
+                <td>10000</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Carrosnovos" asp-action="EditarCarros">Editar</a>
+                        <a role="button" class="btn btn-danger"asp-controller="Carrosnovos" asp-action="ApagarConfirmacao">Excluir</a>
+
+                    </div>
+                </td>
+
+
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Ford Ka</td>
+                <td>Thornton</td>
+                <td>fat</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>mdo</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary"  asp-controller="Carrosnovos" asp-action="EditarCarros">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Carrosnovos" asp-action="ApagarConfirmacao">Excluir</a>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Fusca</td>
+                <td>the Bird</td>
+                <td>twitter</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>mdo</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary"  asp-controller="Carrosnovos" asp-action="EditarCarros">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Carrosnovos" asp-action="ApagarConfirmacao">Excluir</a>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

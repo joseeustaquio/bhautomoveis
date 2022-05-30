@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Confirmação de exclusão de  usuario";
+}
+<div class="text-center">
+    <h3>Deseja realment excluir usuario?</h3>
+</div>
+
+<a class="btn btn-primary btn-block" role="button" asp-controller="Usuarios" asp-action="Index">Cancelar Exclusão</a>
+<a class="btn btn-danger btn-block" role="button" asp-controller="Usuarios" asp-action="ApagarUsuarioConfirmacao">Confirmar
+    Exclusão</a>

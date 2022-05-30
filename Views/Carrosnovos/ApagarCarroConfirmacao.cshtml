@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Confirmação excluir carro";
+}
+<div class="text-center">
+    <h3>Deseja apagar o carro(Chevete)?</h3>
+</div>
+
+<a class="btn btn-primary btn-block" role="button" asp-controller="Carrosnovos" asp-action="Index">Cancelar Exclusão</a>
+<a class="btn btn-danger btn-block" role="button" asp-controller="Carrosnovos" asp-action="ApagarCarroConfirmacao">Confirmar
+    Exclusão</a>
